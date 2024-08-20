@@ -11,8 +11,8 @@ let request = 'avengers';
 
 
 
-let url = `http://www.omdbapi.com/?s=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`; /* S */
-let altUrl = `http://www.omdbapi.com/?t=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`; /* T */
+let url = `https://www.omdbapi.com/?s=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`; /* S */
+let altUrl = `https://www.omdbapi.com/?t=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`; /* T */
 
 
 function showData() {
@@ -66,8 +66,8 @@ function showData() {
 }
 
 async function getData() {
-    url = `http://www.omdbapi.com/?s=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`;
-    altUrl = `http://www.omdbapi.com/?t=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`; 
+    url = `https://www.omdbapi.com/?s=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`;
+    altUrl = `https://www.omdbapi.com/?t=${request}&tag_mode=all=json&page=1&apikey=${apiKey}`; 
     
     const res = await fetch(url);
     const data = await res.json();
